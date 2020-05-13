@@ -4,10 +4,12 @@ import { Homepage } from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/homepage/shop/Shop";
 
 import './App.css'
+import { Header } from "./components/header/Header";
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <Switch>
         <Route  exact path="/" component={Homepage} />
         <Route exact path="/shop" component={ShopPage} />
