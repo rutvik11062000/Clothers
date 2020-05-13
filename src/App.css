@@ -1,7 +1,12 @@
+body {
+  font-family: "Open Sans Condensed";
+  padding: 20px 60px;
+}
+
 /* body {
-    font-family: 'Open Sans Condensed';
+    font-family: 'Open Sans';
 } */
 
-body {
-    font-family: 'Open Sans Condensed';
-}
+/* body {
+    font-family: 'Titillium Web', sans-serif
+  } */
