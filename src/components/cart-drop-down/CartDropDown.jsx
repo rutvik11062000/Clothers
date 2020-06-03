@@ -1,8 +1,8 @@
 import './CartDropDownStyles.scss'
-import {CustomButton} from '../custombutton/CustomButton'
+import CustomButton from '../custombutton/CustomButton'
 import React from 'react'
 
-export const CartDropDown = () => {
+const CartDropDown = () => {
     return (
         <div className="cart-dropdown">
             <div className="cart-items">
@@ -12,3 +12,5 @@ export const CartDropDown = () => {
         </div>
     )
 }
+
+export default CartDropDown;
