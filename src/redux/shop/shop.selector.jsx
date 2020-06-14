@@ -2,6 +2,20 @@ import { createSelector } from "reselect";
 
 const selectShop = (state) => state.shop;
 
-const selectShopData = createSelector([selectShop], (shop) => shop.shop_data);
+export const selectShopData = createSelector([selectShop], (shop) => shop.collections);
 
-export default selectShopData;
+// const COLLECTION_ID_MAP = {
+//   hats: 1,
+//   sneakers: 2,
+//   jackets: 3,
+//   womens: 4,
+//   mens: 5,
+// };
+
+export const selectCollection = (collectionParamUrl) =>
+  createSelector(
+    [selectShopData], 
+    (collections) => collections[collectionParamUrl],
+  );
+
+// export default selectShopData;
