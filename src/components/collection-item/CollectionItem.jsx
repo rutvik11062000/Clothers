@@ -21,6 +21,7 @@ export const CollectionItem = ({ item, addItem }) => {
       <CustomButton onClick={() => addItem(item)} inverted>
         Add to cart
       </CustomButton>
+      
     </div>
   );
 };

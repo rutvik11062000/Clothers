@@ -18,4 +18,9 @@ export const selectCollection = (collectionParamUrl) =>
     (collections) => collections[collectionParamUrl],
   );
 
+export const shopSelectorForPreview = createSelector(
+  [selectShopData],
+  collections =>   Object.keys(collections).map(key => collections[key])
+)
+
 // export default selectShopData;
